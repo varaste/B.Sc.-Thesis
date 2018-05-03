@@ -7,3 +7,16 @@ h1{
     -webkit-text-fill-color: teal;
 
 }
+#sina
+{
+text-align:center;
+color:red;
+}
+
+#arya{
+    color-interpolation-filters: sRGB;
+    word-wrap: break-word;
+    background-color: navy;
+    font-family: serif;
+    font-size: 56;
+}
