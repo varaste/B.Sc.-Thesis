@@ -1,3 +1,13 @@
-.con1{
+container.h1{
     color: red;
+    background-color: violet;
+      text-align: center;
+    -webkit-text-fill-color: firebrick;   
+}
+#2{
+    color: coral;
+    background-color: rebeccapurple;
+    text-align: center;
+    -webkit-text-fill-color: firebrick;
+
 }
