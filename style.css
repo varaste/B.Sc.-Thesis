@@ -1,13 +1,9 @@
-container.h1{
-    color: red;
-    background-color: violet;
-      text-align: center;
-    -webkit-text-fill-color: firebrick;   
+div{
+    background-color:cadetblue;
 }
-#2{
-    color: coral;
-    background-color: rebeccapurple;
+h1{
+    color: royalblue;
     text-align: center;
-    -webkit-text-fill-color: firebrick;
+    -webkit-text-fill-color: teal;
 
 }
