@@ -1,7 +1,14 @@
 #AVjumbotron{
-    
     background-color: sienna;
-
+    font: italic;
+    font:small;
+    color:red;
+}
+#AVjumbotron1{
+    background-color: sienna;
+    font: italic;
+    font:small;
+    color:red;
 }
 div{
     background-color:cadetblue;
