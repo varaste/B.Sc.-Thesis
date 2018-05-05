@@ -1,9 +1,9 @@
 #AVjumbotron{
     background-color: sienna;
-    
     font:small;
-    color:red;
+    color:gold;
     font-family: sans-serif;
+  
 }
 #AVjumbotronH1{
     background-color: sienna;
@@ -20,6 +20,7 @@ h1{
     text-align: center;
     -webkit-text-fill-color: teal;
 
+   
 }
 #sina
 {
@@ -38,6 +39,6 @@ color:gold;
     margin: 4px,9px;
     nav-down: auto;
     border: 3 saddlebrown darkblue;
-    background-color: aqua;
+    background-color:darkgray;
     
 }
