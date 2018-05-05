@@ -1,14 +1,16 @@
 #AVjumbotron{
     background-color: sienna;
-    font: italic;
+    
     font:small;
     color:red;
+    font-family: sans-serif;
 }
-#AVjumbotron1{
+#AVjumbotronH1{
     background-color: sienna;
     font: italic;
     font:small;
     color:red;
+    font-family: sans-serif;
 }
 div{
     background-color:cadetblue;
@@ -22,7 +24,7 @@ h1{
 #sina
 {
 text-align:center;
-color:red;
+color:gold;
 }
 
 #arya{
