@@ -3,11 +3,15 @@
     font:small;
     color:gold;
     font-family: sans-serif;
-    text-justify: inter-cluster;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-radius: 30px;
+    border-right: firebrick;
+    
+
+
 
 }
 #AVjumbotronH1{
