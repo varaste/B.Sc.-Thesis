@@ -20,10 +20,7 @@
     font-family: sans-serif;
 }
 
-
-
-
-    ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -94,11 +91,4 @@ color:gold;
     background-color: navy;
     font-family: serif;
     font-size: 56;
-}
-#tehran{
-    margin: 4px,9px;
-    nav-down: auto;
-    border: 3 saddlebrown darkblue;
-    background-color:darkgray;
-    
 }
