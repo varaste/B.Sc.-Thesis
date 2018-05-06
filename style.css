@@ -20,33 +20,6 @@
     font-family: sans-serif;
 }
 
-.container {
-  display: flex;
-
-}
-.search {
-  flex: 1;
-}
-.container > li {
-  flex: 1;
-}
-@media all and (max-width: 600px) {
-  
-  .container {
-    flex-wrap: wrap;
-  }
-  
-  .container > li {
-    flex-basis: 50%;
-  }
-}@media all and (max-width: 400px) {
-  .container > li {
-    flex-basis: 100%;
-  }
-  .search {
-    order: 1;
-  }
-}
 
 
 
