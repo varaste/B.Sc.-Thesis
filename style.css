@@ -1,3 +1,71 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background: #e5eaf0;
+}
+#wrapper{
+    width: 500px;
+    margin: 0 auto;
+    min-height: 600px;
+    background: #ccd6e0;
+    overflow: hidden;
+}
+#content,
+#footer,
+#copyright,
+#header{
+    margin:10px;
+    background: #a5afba;
+    min-height: 150px;
+    overflow: hidden;
+}
+#footer,
+#content{
+    background: none;
+}
+#left{
+    width: 150px;
+    float: left;
+    background: #a5afba;
+    min-height: 400px;
+}
+#right{
+    width: 330px;
+    float: right;
+    min-height: 400px;
+}
+#right-top div{
+    width: 100px;
+    float: right;
+    margin-left: 10px;
+    height: 100px;
+    background: #a5afba;
+}
+#right-bottom{
+        background: #a5afba;
+        width: 320px;
+        float: right;
+        height: 290px;
+        margin-top: 10px;
+}
+#footer{
+    margin-left: 0px;
+}
+#footer div{
+    width: 235px;
+    float: left;
+    margin-left: 10px;
+    height: 150px;
+    background: #a5afba;
+}
+
+
+
+
+
+
+
+
 #AVjumbotron{
     background-color: sienna;
     font:small;
