@@ -3,13 +3,6 @@ body{
     margin: 0px;
     background: #e5eaf0;
 }
-#wrapper{
-    width: 500px;
-    margin: 0 auto;
-    min-height: 600px;
-    background: #ccd6e0;
-    overflow: hidden;
-}
 #content,
 #footer,
 #copyright,
