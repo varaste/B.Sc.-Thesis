@@ -256,11 +256,3 @@ li.dropdown {
 text-align:center;
 color:gold;
 }
-
-#arya{
-    color-interpolation-filters: sRGB;
-    word-wrap: break-word;
-    background-color: navy;
-    font-family: serif;
-    font-size: 56;
-}
