@@ -3,13 +3,6 @@ body{
     margin: 0px;
     background: #e5eaf0;
 }
-#wrapper{
-    width: 500px;
-    margin: 0 auto;
-    min-height: 600px;
-    background: #ccd6e0;
-    overflow: hidden;
-}
 #content,
 #footer,
 #copyright,
@@ -255,12 +248,4 @@ li.dropdown {
 {
 text-align:center;
 color:gold;
-}
-
-#arya{
-    color-interpolation-filters: sRGB;
-    word-wrap: break-word;
-    background-color: navy;
-    font-family: serif;
-    font-size: 56;
 }
