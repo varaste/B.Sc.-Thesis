@@ -20,3 +20,18 @@
 
 
                 }
+
+.footer1{
+    border: 1px solid #fef8f6;
+    background-color: #026000;
+    box-shadow: none;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.footer2{
+
+}
