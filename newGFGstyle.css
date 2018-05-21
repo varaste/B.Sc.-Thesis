@@ -9,3 +9,14 @@
                     font-size: 14px;
                     font-weight: bold;
                 }
+
+.barchasb{
+                    border: 1px solid #868686;
+                    background-color: #e333e0;
+                    padding: 10px;
+                    box-shadow: none;
+                    text-align: center;
+                    font-weight: bold;
+
+
+                }
