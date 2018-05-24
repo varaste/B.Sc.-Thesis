@@ -70,3 +70,18 @@ window._wpemojiSettings = {
             f = c.source || {}, f.concatemoji ? e(f.concatemoji) : f.wpemoji && f.twemoji && (e(f.twemoji),
                 e(f.wpemoji)))
 }(window, document, window._wpemojiSettings);
+
+
+var arrPostCat = new Array();
+        arrPostCat.push('3');
+        arrPostCat.push('1751');
+        arrPostCat.push('1752');
+        var domain = 1;
+        var arrPost = new Array();
+        var post_id = "0";
+        var post_type = "post";
+        var post_slug = window.location.href;
+        var ip = "52.56.127.19";
+        var post_title = "Replacing an element makes array elements consecutive";
+        var post_status = "publish";
+        var isAdminLoggedIn = 0;
