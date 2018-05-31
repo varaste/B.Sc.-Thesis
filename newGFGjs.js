@@ -81,7 +81,6 @@ $(document).ready(function(){
 //                 e(f.wpemoji)))
 // }(window, document, window._wpemojiSettings);
 
-
 // var arrPostCat = new Array();
 //         arrPostCat.push('3');
 //         arrPostCat.push('1751');
@@ -107,7 +106,6 @@ $(document).ready(function(){
 //                     x.previousElementSibling.className.replace(" w3-green", "");
 //             }
 //         }
-
 //         function myDropFunc() {
 //             var x = document.getElementById("demoDrop");
 //             if (x.className.indexOf("w3-show") == -1) {
