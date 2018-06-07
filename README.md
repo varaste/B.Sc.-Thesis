@@ -6,4 +6,3 @@
 heder
 navbar
 sidebar
-main
