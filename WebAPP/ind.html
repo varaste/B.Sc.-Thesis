@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<title>Dentigerous Lesion Detection System</title>
+
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="icon" href="Dentigerous-cyst2.jpg" sizes="192x192" />
+
+
+<link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel='stylesheet' href='https://www.w3schools.com/lib/w3-colors-metro.css'>
+<link rel='stylesheet' href='https://www.w3schools.com/lib/w3-colors-win8.css'>
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en' lang='en'>
+<link href='https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script type=text/javascript src='{{
+  url_for("static", filename="main.js") }}'></script>
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Chivo', sans-serif;
+            font-weight: 300;
+        }
+        
+        h1 {
+            font-family: 'Chivo', sans-serif;
+            font-weight: 300;
+            color: rgb(255, 255, 255);
+            margin: 2%;
+            padding: 0%;
+            border: 10px;
+            border-color: black;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        div {
+            align-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://example.com/MaterialIcons-Regular.eot);
+            /* For IE6-8 */
+            src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+        }
+        
+        .Title {
+            color: #b08010;
+        }
+        
+        .footer {
+            background-color: #eabe57;
+        }
+        
+        .myName {
+            font-family: 'Chivo', sans-serif;
+            font-weight: 350;
+            color: rgb(0, 0, 0);
+            margin: 0%;
+            padding: 1%;
+            border: 10px;
+            border-color: black;
+        }
+        
+        .icon1 {
+            width: 60px;
+            height: 60px;
+            padding: 0%;
+            margin-left: 2%;
+        }
+        
+        .icons {}
+        
+        .page {
+            margin: 40px;
+        }
+        
+        .PageName {
+            margin: 2%;
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+        
+        .LeftCont {
+            padding-top: 1px;
+        }
+        
+        .onoffswitch {
+            position: relative;
+            width: 101px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        
+        .onoffswitch-checkbox {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .onoffswitch-label {
+            display: block;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid #999999;
+            border-radius: 15px;
+        }
+        
+        .onoffswitch-inner {
+            display: block;
+            width: 200%;
+            margin-left: -100%;
+            transition: margin 0.3s ease-in 0s;
+        }
+        
+        .onoffswitch-inner:before,
+        .onoffswitch-inner:after {
+            display: block;
+            float: left;
+            width: 50%;
+            height: 38px;
+            padding: 0;
+            line-height: 38px;
+            font-size: 17px;
+            color: white;
+            font-family: Trebuchet, Arial, sans-serif;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        
+        .onoffswitch-inner:before {
+            content: 'ON';
+            padding-left: 15px;
+            background-color: #34C247;
+            color: #FFFFFF;
+        }
+        
+        .onoffswitch-inner:after {
+            content: 'OFF';
+            padding-right: 15px;
+            background-color: #F00909;
+            color: #0F0F0F;
+            text-align: right;
+        }
+        
+        .onoffswitch-switch {
+            display: block;
+            width: 25px;
+            margin: 6.5px;
+            background: #FFFFFF;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 59px;
+            border: 2px solid #999999;
+            border-radius: 15px;
+            transition: all 0.3s ease-in 0s;
+        }
+        
+        .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+            margin-left: 0;
+        }
+        
+        .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+            right: 0px;
+        }
+    </style>
+
+
+    <body class='w3-light-grey'>
+        <header class='w3-container footer w3-center w3-margin-top w3-vivid-red'>
+            <div class='row' style="padding-left: 7%; font-weight: bolder;">
+                <a class="col-2" href="http://aut.ac.ir/aut/">
+                    <img style="max-width: 50%; max-height: 40%; padding:2%" src="./assets/aut-logo.png" class="w3-hover-opacity" alt="Avatar">
+                </a>
+                <h1 class="col-md-7.5" style='font-weight: bolder;'>Dentigerous Lesion Detection System</h1>
+                <a class="col-md-2" href="http://ceit.aut.ac.ir/">
+                    <img style="max-height: 40%; max-width: 43%;" src="./assets/ce.png" class="w3-hover-opacity" alt="Avatar">
+                </a>
+            </div>
+        </header>
+
+
+        <!-- Page Container -->
+        <div class='w3-content w3-margin-top' style='max-width:1400px;'>
+            <!-- The Grid -->
+            <div style="padding-left: 7%; padding-right: 7%;">
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large" style="padding-top:2%; padding-bottom: 2px; padding-left:3%; padding-right:3%">
+                    <h2 class="" style="text-align:justify; font-weight: bolder;">
+                        <b class="Title">Dentigerous Cyst</b>
+                    </h2>
+                    <hr>
+
+                    <div class="row ">
+                        <div class="col-md-8" style="text-align:justify; font-size: large;">
+                            Dentigerous cyst, also known as follicular cyst is an epithelial-lined developmental cyst formed by accumulation of fluid between the reduced enamel epithelium and crown of an unerupted tooth. Dentigerous cyst is the second most prevalent type of odontogenic
+                            cysts after radicular cyst. 70 percent of the cases occurs in the mandible. Dentigerous cyst is usually painless. Patient usually comes with a concern of delayed tooth eruption or facial swelling. Dentigerous cyst can go unnoticed
+                            and may be discovered coincidentally on a regular radiographic examination.
+                            <br>Dentigerous cysts most commonly occur in the 2nd and 3rd decades of life. Males have been reported to be more prevalent than females. These cysts can also be found in young children and adolescents. These cysts are commonly
+                            single lesions. Bilateral and multiple dentigerous cysts are very rare although they have been reported.
+                            <br>Early detection and removal of the cysts is essential to reduce morbidity since dentigerous cyst can attain considerable size without any symptoms. Patient who presents with unerupted teeth should be thoroughly examined
+                            with radiographic examinations to check our for dentigerous cysts. Panoramic radiographs may be indicated for this purpose. Pathologic analysis of the lesion is important for the definitive diagnosis even though radiographs
+                            provide valuable information.
+
+                        </div>
+                        <div class="col-md-3">
+                            <img style="max-height: 140%; max-width: 140%;" src="./assets/Dentigerous-cyst.jpg" class="w3-hover-opacity" alt="Avatar">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large" style="padding-top:2%; padding-bottom: 2px; padding-left:3%; padding-right:3%">
+                    <h2 class="" style="text-align:justify; font-weight: bolder;">
+                        <b class="Title">Upload the image</b>
+                    </h2>
+                    <hr>
+
+                    <div style="text-align:justify; font-size: large;">
+                        The input file must be a dental panoramic radiograph.
+                    </div>
+                    <div class="container" style="align-items: center; font-size: large;">
+                        <form class="form-inline" action="{{ url_for('index') }}" method="post" enctype="multipart/form-data" style="padding-left:18%; font-size: large; padding-top:2%">
+                            <div class="form-group w3-round-large" style="background-color: #ffe4d4;border-color: #0F0F0F; border-style: solid; border-width: thin;">
+                                <input type="file" name="file" class="btn btn-default" style="font-size: large;">
+                            </div>
+                            <div class="form-group" style="margin-left:3%; ">
+                                <input type="submit" value="Upload" class=" w3-round-large" style="background-color: #b48922; color:#FFFFFF">
+                            </div>
+                        </form>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large" style="padding-top:2%; padding-bottom: 2px; padding-left:3%; padding-right:3%">
+                    <h2 class="" style="text-align:justify; font-weight: bolder;">
+                        <b class="Title">Prediction Result</b>
+                    </h2>
+                    <hr>
+
+                    <div class="">
+                        <div class="" style="text-align:justify; font-size: large;">
+                            <h2 style="color: #0ab928;">
+                                Dentigerous cyst is not detected
+                            </h2>
+
+                        </div>
+                        <hr>
+                        <div class="">
+                            <img style="max-height: 100%; max-width: 90%;" src="./assets/dnd.png" class="w3-hover-opacity" alt="Avatar">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--  
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large" style="padding-top:2%; padding-bottom: 2px; padding-left:3%; padding-right:3%">
+                    <h2 class="" style="text-align:justify; font-weight: bolder;">
+                        <b class="Title">Prediction Result</b>
+                    </h2>
+                    <hr>
+
+                    <div class="">
+                        <div class="" style="text-align:justify; font-size: large;">
+                            <h2 style="color: #F00909;">
+                                Dentigerous cyst is detected
+                            </h2>
+                            <h4>
+                                Probable areas of infection are inside the drawn rectangle(s)
+                            </h4>
+                        </div>
+                        <hr>
+                        <div class="">
+                            <img style="max-height: 100%; max-width: 90%;" src="./assets/dd.png" class="w3-hover-opacity" alt="Avatar">
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <!-- End Grid -->
+        </div>
+        <!-- End Page Container -->
+
+        </div>
+        <footer class='w3-container footer w3-center w3-margin-top'>
+            <div class="row">
+
+                <div class="col-md-3">
+                    <img style="max-height: 40%; max-width: 50%;" src="./assets/ICCI-logo-square.png" class="w3-hover-opacity" alt="Avatar">
+
+                </div>
+                <div class="col-md-6">
+                    <h3 style='color:#b08010'>
+                        By
+                        <a href="https://varaste.github.io/" style='color: #ffffff'>
+                    Arya Varaste
+                </a> and
+                        <a href="https://tavasolireza.github.io/" style='color: #ffffff'>
+                    Reza Tavasoli
+                </a>
+                    </h3>
+                </div>
+                <div class="col-md-3">
+
+                </div>
+
+
+            </div>
+
+
+        </footer>
+
+
+    </body>
+
+</html>
